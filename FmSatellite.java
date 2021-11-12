@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * @author Lucas Xu
@@ -7,7 +8,6 @@ import java.util.Scanner;
 
 class FmSatellite {
     public static void main(String[] args) {
-        Satellite sat = new Satellite();
         Authority auth = new Authority();
         auth.view();
     }
@@ -158,7 +158,9 @@ class Authority {
                      */
                     break;
                 case 9:
+                    sc.close();
                     System.exit(0);
+                    break;
                 /**
                  * Exit.
                  */
